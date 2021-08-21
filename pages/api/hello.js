@@ -8,6 +8,6 @@ export default function handler(req, res) {
     dirname: __dirname,
     cwd: process.cwd(),
     files: dirTree(process.cwd()),
-    rootFiles: dirTree('/'),
+    rootFiles: dirTree(__dirname),
   });
 }
